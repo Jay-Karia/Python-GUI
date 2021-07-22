@@ -1,7 +1,9 @@
 from tkinter import *
 root = Tk()
 
-root.geometry("655x333")
+root.geometry("655x383")
+root.wm_minsize(400, 383)
+root.wm_maxsize(1000, 383)
 
 def get_value():
     with open("file/entries", "a") as data:
@@ -17,7 +19,7 @@ def get_value():
         language.set("")
     pass
 
-message = Label(root, text="Welcome to Jay Coding Classes", bg="black", fg="white", width=200, font="Consolas 12 bold")
+message = Label(root, text="Welcome to JSK Coding Classes", bg="black", fg="white", width=200, font="Consolas 12 bold")
 message.pack(fill=X)
 
 enter = Label(root, text="Enter the below form to join the Coding Classes", bg="yellow", fg="black", width=50, font="Consolas 10 bold")
@@ -59,8 +61,9 @@ guardian_entry.pack()
 lang.pack()
 language_entry.pack()
 
-Button(text="Submit", command=get_value, padx=20).pack(pady=10)
-# Button(text="End", command=Tk.destroy(root), padx=20).pack(pady=10)
+contact_us = Label(root, text="Contact JSK Coding Class -- jskCoding@gmail.com", bg="yellow", fg="black", font="Consolas 10 bold")
+contact_us.pack(pady=10)
 
+Button(text="Submit", command=get_value, padx=20).pack(pady=10)
 
 root.mainloop()

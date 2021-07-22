@@ -17,6 +17,7 @@ def get_value():
         con.set("")
         guardian.set("")
         language.set("")
+        Tk.destroy(root)
     pass
 
 message = Label(root, text="Welcome to JSK Coding Classes", bg="black", fg="white", width=200, font="Consolas 12 bold")

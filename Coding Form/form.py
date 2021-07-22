@@ -12,11 +12,6 @@ def get_value():
         data.write("\nContact Number: " + str(con.get()))
         data.write("\nGuardian Name: " + str(guardian.get()))
         data.write("\nSelected Language: " + str(language.get()))
-        name.set("")
-        age.set("")
-        con.set("")
-        guardian.set("")
-        language.set("")
         Tk.destroy(root)
     pass
 

@@ -10,6 +10,11 @@ def get_value():
         data.write("\nContact Number: " + str(con.get()))
         data.write("\nGuardian Name: " + str(guardian.get()))
         data.write("\nSelected Language: " + str(language.get()))
+        name.set("")
+        age.set("")
+        con.set("")
+        guardian.set("")
+        language.set("")
     pass
 
 message = Label(root, text="Welcome to Jay Coding Classes", bg="black", fg="white", width=200, font="Consolas 12 bold")
